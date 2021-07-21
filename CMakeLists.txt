@@ -3,4 +3,4 @@ project(fcy)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(fcy main.cpp hello.h test.cpp)
+add_executable(fcy main.cpp)
