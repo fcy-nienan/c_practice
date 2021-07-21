@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
 #include <ctime>
-#include "test.cpp"
 using std::cout;
 using std::endl;
 static const int default_generate_size = 1;
@@ -75,7 +74,7 @@ void insert_sort(int *x,int length){
 }
 
 void merge_count(int *x,int left,int mid,int right,int *result){
-    
+
 }
 void merge_sort_recursive(int *x,int left,int right,int *result){
     int mid = (right-left)/2;
