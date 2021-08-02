@@ -1,6 +1,9 @@
 //
 // Created by 80771 on 2021/7/22.
 //
+#include <stdlib.h>
+#include <time.h>
+#include "using_cout.h"
 
 namespace sort_test{
     static const int default_generate_size = 1;
