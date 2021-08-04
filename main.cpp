@@ -55,6 +55,13 @@ int main() {
 //    object_test::test();
 //    template_test::test();
 
+    int x[7];
+    int* pp=&x[0];
+    cout<<pp[5]<<endl; //还可以这样,我还以为不可以,类型不同    原因在下面  x[y] 等同于*(x+y)  所以pp[5]等同于*(p+5)
+    //The reason that this works is that the array dereferencing operator in C, [ ],
+    // is defined in terms of pointers.
+    // x[y] means: start with the pointer x, step y elements forward after what the pointer points to,
+    // and then take whatever is there. Using pointer arithmetic syntax, x[y] can also be written as *(x+y).
 }
 
 
